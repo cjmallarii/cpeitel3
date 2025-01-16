@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+
+.CalcContainer {
+  border: 3px solid #000; /* Solid black border */
+  border-radius: 15px; /* Rounded corners */
+  width: 600px;
+  margin: auto;
+  background-color: #000; /* Black background */
+}
+
+.DispContainer {
+  padding: 10px;
+  border: 2px solid #000; /* Solid black border */
+  border-radius: 10px; /* Slight rounding for display container */
+  height: 60px;
+  background-color: #000; /* Black background */
+}
+
+.Display {
+  font-size: 2em;
+  text-align: right;
+  padding-right: 10px;
+  color: #fff; /* White text color */
+}
+
+.ButtonsContainer {
+  border: 2px solid #000; /* Solid black border */
+  border-radius: 10px; /* Slight rounding for button container */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for buttons */
+  gap: 10px; /* Space between buttons */
+  padding: 10px; /* Padding around the button container */
+  background-color: #000; /* Black background */
+}
+
+.ButtonsContainer > button {
+  font-size: 1.5em;
+  padding: 15px;
+  background-color: #000; /* Black background for buttons */
+  border: 1px solid #fff; /* White border for contrast */
+  color: #fff; /* White text color */
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s; /* Added transform for button effect */
+  border-radius: 8px; /* Rounded buttons */
+}
+
+.ButtonsContainer > button:hover {
+  background-color: #333; /* Dark gray on hover for better contrast */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.ButtonsContainer > .surname {
+  grid-column: span 4; /* Make surname button span all columns */
+  background-color: #000; /* Black background */
+  color: #fff; /* White text color */
+  border-radius: 8px; /* Consistent button rounding */
+  padding: 15px; /* Padding for the surname button */
+  font-size: 1.5em; /* Consistent font size */
+  border: 1px solid #fff; /* White border for contrast */
+}
+
+/* New styles for the additional buttons */
+.ButtonsContainer > .learn-button {
+  grid-column: span 4; /* Make each button span all columns */
+  margin: 5px 0; /* Add vertical margin for spacing */
+}
+
+/* Adjustments for the RESET and NAME buttons */
+.ButtonsContainer > .reset-button {
+  grid-column: span 1; /* Make RESET button span 2 columns */
+}
+
+.ButtonsContainer > .name-button {
+  grid-column: span 1; /* Make NAME button span 2 columns */
+}
