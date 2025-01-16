@@ -20,7 +20,7 @@ function Display({ display }) {
 function App() {
   const fullName = "CARL JUNNEL MALLARI"; // Change to your full name
   const section = "IT3A";
-  const [disp, setDisp] = useState("10 Things That Require Zero Talent");
+  const [disp, setDisp] = useState("C-PEITEL3 EXPECTATIONS");
 
   const items = [
     "Being On Time",
@@ -42,7 +42,7 @@ function App() {
   };
 
   const resetClickHandler = () => {
-    setDisp("C-PEITEL3 EXPECTATIONS");
+    setDisp("10 Things That Require Zero Talent");
   };
 
   const surnameClickHandler = () => {
